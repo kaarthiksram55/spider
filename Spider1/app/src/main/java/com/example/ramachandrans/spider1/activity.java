@@ -43,12 +43,15 @@ public class activity extends Activity {
     }
     public void reset(View v){
         n=0;
+        check();
         t2.setText("Rs. "+n);
-        l1.setBackgroundColor(Color.argb(0,0,0,0));
     }
     public void check(){
         if(n==k) {
             l1.setBackgroundColor(Color.argb(0xFF, 0x00, 0xFF, 0x00));
+        }
+        else{
+            l1.setBackgroundColor(Color.argb(0,0,0,0));
         }
     }
 }
